@@ -1,0 +1,8 @@
+{
+    "env": {
+        "DB_USER": "NasroBl",
+        "DB_PASSWORD": "VQmpdyKTyOYnkrpi",
+        "DB_NAME": "pickme",
+        "JWT_SECRET": "pickme_secret_key_123456789"
+    }
+}

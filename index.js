@@ -6,6 +6,8 @@ const path = require('path');
 const usersRoutes = require('./routes/users-routes');
 const HttpErrors = require('./models/http-error');
 
+const PORT = process.env.PORT || '5000';
+
 const dbUrl = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@pickmecluster.gjkcj78.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
 const app = express();
@@ -54,5 +56,5 @@ app.listen(5000, () => {
     console.log('Server is running on port 5000');
 });
 } ).catch((err) => {
-    console.log(err);
+    console.log(PORT);
 });
